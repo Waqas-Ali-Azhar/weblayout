@@ -1,0 +1,272 @@
+/*
+
+  General CSS
+
+ */
+
+html,body{
+  padding: 0px;
+  margin: 0px;
+  clear: both;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;;
+}
+body,p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1.text-1{
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h1.lspace{
+  letter-spacing: 1px;
+}
+
+
+h2.text-1{
+  line-height: 1.4;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2.text-2{
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2.lspace{
+  letter-spacing: 2px;
+}
+
+p.u-text-3{
+  font-style: italic;
+    margin: 20px 0 0;
+    line-height: 1.8;
+    font-size: 1.125rem;
+}
+
+
+.filled-button{
+  letter-spacing: 3px;
+  font-size: 1.25rem;
+  border-style: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-image: none;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+    /*margin: 38px auto 0 0;*/
+    display: inline-block;
+}
+
+.filled-button:hover{
+  background-color: #f1c50e !important;
+  color: #111111 !important;
+  display: inline-block;
+
+}
+
+.ib{
+  display: inline-block;
+}
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.col-60{
+  width: 60%;
+}
+
+.col-55{
+  width: 55%;
+}
+
+.col-50{
+  width: 50%;
+}
+
+.col-40{
+  width: 40%;
+}
+
+.col-30{
+  width: 30%;
+}
+
+p.text-2{
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: normal;
+    margin: 23px 0 0;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+
+div.featured-wrapper{
+  padding: 0px 5px 0px 100px;
+}
+
+
+
+
+
+/*
+  
+  ==================
+
+   Main Container
+  =================
+
+ */
+
+.main-container{
+  width: 1280px;
+}
+
+.body-container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+
+
+/*
+============
+Header - Section
+============
+*/
+
+.header{
+  background: #1a1a1a;
+  height: 34px;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+
+.search-wrapper input{
+  height: 34px;
+  border:1px solid #cacaca;
+  font-size: 16px;
+  padding-left: 12px;
+  background: transparent;
+}
+.menu-wrapper i{
+  color: white;
+  font-size: 24px;
+
+}
+
+.header form{
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+}
+
+#search-form{
+  position: relative;
+}
+
+#search-form button{
+  position: absolute;
+  right: 0px;
+  height: 38px;
+  background: transparent;
+  border: none;
+}
+
+#search-form button i{
+  font-size: 22px;
+  /*font-weight: 400;*/
+  color: white;
+
+}
+
+
+.outer{
+border:  1px solid black;
+ width: 350px;
+ height: 150px;
+}
+
+.inner{
+  border:  1px solid blue;
+  width: 100px;
+  height: 80px;
+}
+
+
+
+/* 
+=======
+ Featured Section
+=====
+*/
+
+#featured{
+  height: 690px;
+  background: url('../images/featured.jpg');
+  position: relative;
+  z-index: 0;
+}
+
+#featured .circle{
+  position: absolute;
+  border-radius: 50%;
+  height: 359px;
+  width: 359px;
+  background: #f1c50e;
+  z-index: -1;
+  left: -40px;
+  top: 25px;
+}
+#featured .right{
+  background: url('../images/section1.jpg');
+  height: 690px;
+  background-position: 12.38% 50%;
+  background-size: cover;
+  
+}
+
+/*#featured .left, #featured .right{ padding:40px; }*/
+
+#featured .heading-wrapper{
+  padding-top: 122px;
+}
+
+#featured .heading-wrapper .border{
+  height: 6px;
+  background: black;
+  width: 110px;
+}
+
+#featured .heading-wrapper h1.text-1{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
