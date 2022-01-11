@@ -261,6 +261,28 @@ border:  1px solid black;
 
 
 
+/*
+============
+ second section
+============
+ */
+
+
+div.second.section{
+  height: 400px;
+  width: 100%;
+  background: beige;
+  text-align: center;
+}
+
+div.second.section p{
+  border: 1px solid black;
+  width: 40%;
+}
+
+
+
+
 
 
 
