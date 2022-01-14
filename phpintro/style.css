@@ -1,0 +1,122 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+}
+
+div.menu{
+  padding: 0px 50px;
+  height: 50px;
+  background: cadetblue;
+
+}
+
+div.image-wrapper{
+
+    width: 30px;
+    /*height: 50px;*/
+}
+
+.ib{
+  display: inline-block;
+}
+
+div.image-wrapper img{
+  width: 100%;
+  height: auto;
+}
+
+ul.menu li{
+  display: inline-block;
+}
+ul.menu li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background:  black;
+}
+ul.menu{
+  float: right;
+
+}
+
+ul.menu li a:hover{
+  color: black;
+  background: white;
+  border:  1px solid black;
+}
+
+div.left, div.right{
+  height: 50px;
+  /*border: 1px solid black;*/
+  float: left;
+}
+
+div.left{
+  width: 30%;
+}
+
+div.right{
+  width: 70%;
+}
+
+
+div.table{
+  width: 100%;
+  height: inherit;
+  display: table;
+}
+
+div.table-cell{
+  width: 100%;
+  height: inherit;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div.data{
+
+  padding: 150px;
+  border: 25px solid green;
+  outline: 10px solid cadetblue;
+}
+
+div.scoreboard{
+  background: red;
+  width: fit-content;
+  padding: 15px;
+  height: 150px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+
+
+/* The animation code */
+@keyframes example {
+  0% {font-size: 24px;}
+
+  20% {font-size: 30px;}
+
+  50% {font-size: 48px;}
+
+  75% {font-size: 30px;}
+
+  100% {font-size: 24px;}
+
+
+
+  
+}
+
+/* The element to apply the animation to */
+div.winner {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 20;
+}
+
