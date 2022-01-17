@@ -16,6 +16,148 @@
     float     23.5
 
     */
+   
+   define('COUNT', 100);
+
+
+   $number1 = 10;
+   $number2 = 10;
+
+   //Arithmentic operators & Arithmetic operations
+   // Assignment expression
+   $number3 = $number2 + $number1;  
+
+   $name = "waqas";
+
+   $firstname = "waqas";
+   $midname = "ali";
+   $lastname = "azhar";
+
+   echo $firstname.' '.$midname.' '.$lastname;
+
+   echo "<p>".$firstname." ".$lastname."</p>";
+
+   
+
+
+    //pre increment
+    echo ++$number3;
+
+    echo "<br>";
+
+    //post increment
+    echo $number1+$number3++;
+
+    echo $number3;
+
+
+   // echo $$number2;
+   // 
+   // 
+   // 
+   
+   // elements at consecutive memory locations
+   // Array length of is equal to number of elements - 10
+   // array index always starts from 0 and end at length -1
+
+    //simple array
+   $marks_array = array(
+     100,90,80,70,60,50,40,30,20,10
+   );
+
+   echo "<pre>";
+   print_r($marks_array);
+
+
+   //2d array
+   //
+  $marks_array = array(
+    array(100,90),
+    array(90,90),
+    array(90,30)
+
+   );
+
+
+
+  // echo "<pre>";
+  print_r($marks_array);
+
+  echo $marks_array[0][1] + $marks_array[1][1];
+
+
+
+  //Associative
+  //
+  $marks = array(
+    "one" => array("urdu" => 15,"english" => '10' ),
+    "two" => array("english" => 99, "urdu" => 37)
+  );
+
+
+  print_r($marks);
+
+  $marks2 = array(
+    "one" => array("urdu" => 15,"english" => '1000' ),
+    "two" => array("english" => 99, "urdu" => 3007)
+  );
+
+
+  echo "<pre>";
+  // print_r($marks);
+  // print_r($marks["one"]["english"]);
+  // print_r($marks["two"]["urdu"]);
+
+  $sum = $marks["one"]["english"] + $marks["two"]["urdu"];
+  // print_r($sum);
+
+
+
+
+  function calculate_average($marksArr){
+    //set of statement that can be called anywhere in program
+    //
+    
+    $sum = $marksArr["one"]["english"] + $marksArr["two"]["english"];
+    $average = $sum /2;
+    return $average;
+
+  }
+
+
+  $result = calculate_average($marks);
+  $result2 = calculate_average($marks2);
+
+  echo $result;
+
+
+
+
+ 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
 
 
 // Assigment Expression
@@ -44,7 +186,7 @@
 <body>
 
 
-  <div class="container">
+  <div class="container" style="display: none;">
 
     <div class="menu">
       <div class="left ib">
