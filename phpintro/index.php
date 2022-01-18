@@ -128,7 +128,57 @@
   $result = calculate_average($marks);
   $result2 = calculate_average($marks2);
 
-  echo $result;
+ // echo $result;
+ // 
+ // 
+ //if else dicision making
+$shape = "triangle"; //initiliastion 
+
+
+function calculate_area($shape,$r=0,$h=0,$w=0){
+
+    if($shape == "circle"){
+
+     
+     $area = pi()*$r**2;
+     $area = round($area,0);
+     $result = "Area of cricle is ".$area." cm<sup>2</sup>";
+
+
+  } 
+  elseif( $shape == "triangle"){
+
+    
+
+    $area =  0.5 * ($h * $w);
+    $area = round($area,0);
+
+
+    $result = "Area of triangle is ".$area." cm<sup>2</sup>";
+
+  } 
+  else{
+    // area of square
+    
+    $area = $h * $w;
+    $area = round($area,0);
+
+    $result = "Area of square is ".$area." cm<sup>2</sup>";
+  }
+
+
+  return $result;
+
+
+
+
+  }
+
+
+$area_of_shape = calculate_area("circle",35,10,44);
+echo  $area_of_shape;
+  
+
 
 
 
