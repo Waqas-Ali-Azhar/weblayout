@@ -177,6 +177,72 @@ function calculate_area($shape,$r=0,$h=0,$w=0){
 
 $area_of_shape = calculate_area("circle",35,10,44);
 echo  $area_of_shape;
+
+
+
+
+
+
+
+
+
+
+
+for($i=0; $i<10; ++$i ){
+  echo "<br>";
+  echo "Value of i is". $i;
+  // break;
+}
+
+
+$i = 0;
+while($i<10){
+  echo "<br>";
+  echo "i is less than ten and its value is ". $i;
+  ++$i;
+}
+
+
+$i=0;
+
+do{
+  echo "<br>";
+  echo "I's value is ".$i;
+
+  ++$i;
+
+}
+while($i<10);
+
+
+
+$arr1 = array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+$arr2 = array(10,20,30,40,50,60,70,80,90,100,110,120,130,140,150);
+
+$length = count($arr1);
+$arr3 = array();
+for($i=0; $i<$length; ++$i){
+  $arr3[$i] = $arr1[$i] * $arr2[$i];
+}
+
+echo "<pre>";
+print_r($arr3);
+
+
+$arr4 = array();
+foreach($arr1 as $key => $val){
+  if($key == 5){
+    break;
+  }
+  $arr4[$key] = $val * $arr2[$key];
+
+}
+
+
+echo"<pre>";
+print_r($arr4);
+
+
   
 
 
